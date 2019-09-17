@@ -120,7 +120,7 @@ module.exports = function (context) {
 		Object.keys(configurations).forEach(function (config) {
 			buildSettings = configurations[config].buildSettings;
 			buildSettings.LD_RUNPATH_SEARCH_PATHS = RUNPATH_SEARCH_PATHS_XCODE;
-			buildSettings.SWIFT_OBJC_BRIDGING_HEADER = swiftBridgingHeadXcode;
+			//buildSettings.SWIFT_OBJC_BRIDGING_HEADER = swiftBridgingHeadXcode;
 			buildSettings.IPHONEOS_DEPLOYMENT_TARGET = BUILD_VERSION_XCODE;
 			buildSettings.ENABLE_BITCODE = ENABLE_BITCODE_XCODE;
 			buildSettings.SWIFT_VERSION = SWIFT_VERSION_XCODE;
