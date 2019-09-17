@@ -14,7 +14,7 @@ module.exports = function(context) {
   var projectBridgingHeaderPath = path.join(platformRoot, projectName,
       'Bridging-Header.h');
 
-  var pluginBridgingHeaderFilename = 'SpotifyOAuth-Bridging-Header.h';
+  var pluginBridgingHeaderFilename = 'cordova-plugin-iosrtc-Bridging-Header.h';
   var importDirective = '#import "' + pluginBridgingHeaderFilename + '"';
 
   var data = fs.readFileSync(projectBridgingHeaderPath, {'encoding': 'utf8'});
