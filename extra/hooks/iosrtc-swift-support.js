@@ -85,7 +85,7 @@ module.exports = function (context) {
 	debug('fixing issues in the generated project files:');
 	debug('- "iOS Deployment Target" and "Deployment Target" to: ' + BUILD_VERSION_XCODE);
 	debug('- "Runpath Search Paths" to: ' + RUNPATH_SEARCH_PATHS_XCODE);
-	debug('- "Objective-C Bridging Header" to: ' + swiftBridgingHeadXcode);
+	//debug('- "Objective-C Bridging Header" to: ' + swiftBridgingHeadXcode);
 	debug('- "ENABLE_BITCODE" set to: ' + ENABLE_BITCODE_XCODE);
 	debug('- "SWIFT_VERSION" set to: ' + SWIFT_VERSION_XCODE);
 
@@ -94,7 +94,7 @@ module.exports = function (context) {
 
 	// "build.xcconfig"
 	swiftOptions.push('LD_RUNPATH_SEARCH_PATHS = ' + RUNPATH_SEARCH_PATHS);
-	swiftOptions.push('SWIFT_OBJC_BRIDGING_HEADER = ' + swiftBridgingHead);
+	//swiftOptions.push('SWIFT_OBJC_BRIDGING_HEADER = ' + swiftBridgingHead);
 	swiftOptions.push('IPHONEOS_DEPLOYMENT_TARGET = ' + BUILD_VERSION);
 	swiftOptions.push('ENABLE_BITCODE = ' + ENABLE_BITCODE);
 	swiftOptions.push('SWIFT_VERSION = ' + SWIFT_VERSION);
