@@ -18,6 +18,15 @@
 		<engine name="cordova-ios" version=">=3.8.0" />
 	</engines>
 
+	<platform name="android">
+		<config-file target="AndroidManifest.xml" parent="/manifest">
+		  <uses-permission android:name="android.permission.INTERNET"/>
+		  <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+		  <uses-permission android:name="android.permission.CAMERA"/>
+		  <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+		</config-file>
+	</platform>
+
 	<platform name="ios">
 		<!-- Automatically add hook -->
 		<hook type="after_platform_add" src="extra/hooks/iosrtc-swift-support.js" />
